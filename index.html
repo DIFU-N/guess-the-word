@@ -3,9 +3,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
     <title>Guess the Word</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div id="startButton" style="display: block">
+
+            <button onclick="start()">Start</button>
+
+        </div>
+        <div id="play" style="display: none;">
+            <br>
+            <div id="RRguess" style="display: block">
+
+                <p id="rightG"></p>
+                <p id ="wrongG"></p>
+                <p id ="rem"></p>
+        
+                </div>
+
+        <p>
+        <p>
+        <textarea name="type" id="type" cols="1" rows="1" maxlength="1"></textarea>
+        <p>
+        <button onclick="guess()">Guess</button>
+        </div>
+
+        <div id="igwnk" style="display: none">
+
+            <h1>Nope.. Try again</h1>
+
+            <p id="correctWordWas"></p>
+
+            <div>
+                <button onclick="restart()">Play again??</button>
+            </div>
+
+            
+
+        </div>
+
+        <div id="youWin" style="display: none">
+
+            <h2>You Win</h2>
+
+            <div>
+                <button onclick="restart()">Play again?</button>
+            </div>
+
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
